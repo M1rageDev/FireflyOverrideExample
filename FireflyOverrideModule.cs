@@ -18,7 +18,7 @@ namespace FireflyOverrideTest
 
 			reflection = new FireflyReflection();
 
-			// find the Firefly module, store it for later use
+			// initialize the reflection stuff
 			reflection.Initialize(vessel);
 		}
 

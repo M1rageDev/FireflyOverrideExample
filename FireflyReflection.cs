@@ -140,7 +140,7 @@ namespace FireflyOverrideTest
 				// if the key is a nested field, we need to get the parent field first
 				object parentValue = fieldCache[tokens[0]].GetValue(fxModule);
 
-				// now we can set the child field
+				// now we can get the child field
 				return fieldCache[key].GetValue(parentValue);
 			}
 
