@@ -34,6 +34,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>D:\Programy\KerbalSpaceProgram\English\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="FireflyAPI">
+      <HintPath>..\AtmosphericFx-Firefly\GameData\Firefly\Plugins\FireflyAPI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -84,7 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FireflyOverrideModule.cs" />
-    <Compile Include="FireflyReflection.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
