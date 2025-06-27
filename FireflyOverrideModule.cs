@@ -17,6 +17,13 @@ namespace FireflyOverrideTest
 				return;
 			}
 
+			if (!FireflyAPIManager.IsFireflyInstalled())
+			{
+				// self destruct
+				Destroy(this);
+				return;
+			}
+
 			FireflyAPIManager.TryFindModule(vessel, out fxModule);
 		}
 
@@ -58,7 +65,7 @@ namespace FireflyOverrideTest
 
 				// set the body config
 				// this method gets the config, and fallbacks to the default if it doesn't exist
-				FireflyAPIManager.GetConfigManager().TryGetBodyConfig("test_config", true, out var cfg);
+				FireflyAPIManager.ConfigManager.TryGetBodyConfig("test_config", true, out var cfg);
 				fxModule.OverrideBodyConfig = cfg;
 
 				// calling this function starts the effects
