@@ -17,9 +17,10 @@ namespace FireflyOverrideTest
 				return;
 			}
 
-			if (!FireflyAPIManager.IsFireflyInstalled())
+			if (!FireflyAPIManager.IsFireflyInstalled)
 			{
 				// self destruct
+				Events["ToggleFireflyEffects"].active = false;
 				Destroy(this);
 				return;
 			}
