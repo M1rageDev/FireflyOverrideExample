@@ -65,9 +65,8 @@ namespace FireflyOverrideTest
 				fxModule.OverrideEffectState = 1f;
 
 				// set the body config
-				// this method gets the config, and fallbacks to the default if it doesn't exist
-				FireflyAPIManager.ConfigManager.TryGetBodyConfig("test_config", true, out var cfg);
-				fxModule.OverrideBodyConfig = cfg;
+				// this property sets the body config by name, and fallbacks to the default if it doesn't exist
+				fxModule.OverrideBodyConfigName = "test_config";
 
 				// calling this function starts the effects
 				// (Firefly's effects are disabled outside of the atmosphere, so they need to be re-enabled like this)
