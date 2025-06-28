@@ -32,6 +32,7 @@
     <Reference Include="$(KSPRoot)/GameData/Firefly/Plugins/FireflyAPI.dll">
       <Private>False</Private>
       <KSPAssemblyName>FireflyAPI</KSPAssemblyName>
+      <CKANIdentifier>Firefly</CKANIdentifier>
     </Reference>
   </ItemGroup>
   <PropertyGroup>
