@@ -18,4 +18,3 @@ jobs:
     uses: KSPModdingLibs/KSPBuildTools/.github/workflows/build.yml@main
     with:
        use-ckan: true
-       ckan-filters: .dds .png .bmp .mu .cfg .ksp .txt
