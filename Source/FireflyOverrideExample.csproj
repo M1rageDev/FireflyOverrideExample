@@ -29,10 +29,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="$(KSPRoot)/GameData/Firefly/Plugins/FireflyAPI.dll">
+    <Reference Include="$(RepoRootPath)/GameData/FireflyOverrideExample/Plugins/FireflyAPI.dll">
       <Private>False</Private>
       <KSPAssemblyName>FireflyAPI</KSPAssemblyName>
-      <CKANIdentifier>Firefly</CKANIdentifier>
     </Reference>
   </ItemGroup>
   <PropertyGroup>

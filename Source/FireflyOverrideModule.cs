@@ -1,7 +1,7 @@
 ﻿using FireflyAPI;
 using UnityEngine;
 
-namespace FireflyOverrideTest
+namespace FireflyOverrideExample
 {
     class FireflyOverrideModule : PartModule
     {
