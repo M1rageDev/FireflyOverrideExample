@@ -35,6 +35,9 @@
 	  <CKANIdentifier>Firefly</CKANIdentifier>
     </Reference>
   </ItemGroup>
+  <Target Name="Copy API" AfterTargets="CopyBinariesToRepo">
+    <Copy SourceFiles="$(KSPRoot)/GameData/Firefly/Plugins/FireflyAPI.dll" DestinationFolder="$(RepoRootPath)/$(BinariesOutputRelativePath)"/>
+  </Target>
   <PropertyGroup>
     <BinariesOutputRelativePath>GameData/FireflyOverrideExample/Plugins</BinariesOutputRelativePath>
     <GenerateKSPAssemblyAttribute>true</GenerateKSPAssemblyAttribute>
