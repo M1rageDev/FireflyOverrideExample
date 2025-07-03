@@ -29,15 +29,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="$(KSPRoot)/GameData/Firefly/Plugins/FireflyAPI.dll">
+    <Reference Include="$(KSPRoot)/GameData/FireflyAPI/Plugins/FireflyAPI.dll">
       <Private>False</Private>
       <KSPAssemblyName>FireflyAPI</KSPAssemblyName>
-	  <CKANIdentifier>Firefly</CKANIdentifier>
+	  <CKANIdentifier>FireflyAPI</CKANIdentifier>
     </Reference>
   </ItemGroup>
-  <Target Name="Copy API" AfterTargets="CopyBinariesToRepo">
-    <Copy SourceFiles="$(KSPRoot)/GameData/Firefly/Plugins/FireflyAPI.dll" DestinationFolder="$(RepoRootPath)/$(BinariesOutputRelativePath)"/>
-  </Target>
   <PropertyGroup>
     <BinariesOutputRelativePath>GameData/FireflyOverrideExample/Plugins</BinariesOutputRelativePath>
     <GenerateKSPAssemblyAttribute>true</GenerateKSPAssemblyAttribute>
