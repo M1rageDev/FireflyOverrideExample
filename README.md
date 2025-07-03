@@ -7,4 +7,4 @@ KSP Build Tools is setup here, so the only thing you need to do is point it to a
 
 You also have to specify the KSPRoot parameter (like shown in the link above) in your .csproj.user file so that it can find the FireflyAPI dll.
 
-FireflyAPI needs to be installed in the KSP mentioned above for this to work.
+FireflyAPI needs to be in the KSP install for this to work.
